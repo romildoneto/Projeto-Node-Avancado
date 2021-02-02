@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Usuario Encontrado</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+</head>
+
+<body>
+<div class="container">
+    <div class="card mt-2 mb-2">
+        <div class="card-body">
+            <div class="card-header bg-success">
+                <h3>Resultado Perfil Github:</h3>           
+            </div>
+             <div style="width: 18rem;"> 
+                 <img src="<%= dado.avatar_url %>">
+                 <h4 class="card-title"><%= dado.name %></h4>
+                 <strong><%= dado.url %></strong>
+                 <strong><%= dado.following %></strong>
+                 <strong><%= dado.followers %></strong>
+                 <strong><%= dado.public_repos %></strong>
+                
+            </div> 
+        </div>
+            <div class="card-body">
+                <a href="<%= dado.html_url %>" class="card-link">Acesse o Perfil no Github</a>
+            </div>
+        <a href="/" class="btn btn-outline-success">Clique aqui para buscar um novo usuario</a>
+    </div>
+</body>
+</html>
